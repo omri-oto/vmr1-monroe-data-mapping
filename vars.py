@@ -1,4 +1,6 @@
 from pathlib import Path
+import os
+
 MAKES = [
     'AAD',
     'ABARTH',
@@ -88,7 +90,7 @@ MAKES = [
     'VOLVO TRUCKS',
     'ZOTYE',
 ]
-BASE_DIR = Path('.').absolute()
+BASE_DIR = Path(os.path.dirname(__file__))
 MONROE_CATALOGUE_PATH = BASE_DIR / 'data' / 'monroe-catalogue-2020-21-za.pdf'
 MAPPING_SYSTEM_PATH = BASE_DIR / 'data' / 'Final Mapping Tool Template - 2022 - v2.xlsx'
 
